@@ -9,3 +9,7 @@ DB_PASSWORD=postgres
 
 2. If you found refused connection while do migration file
 Execute this syntax docker-compose exec {PHP_SERVICE} bash
+
+3. Dont forget give all privileges on user database
+create user postgres with password 'postgres';
+grant all privileges on qlope_db to postgres;
